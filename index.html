@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    
+　　<title>Angel Sweets</title>
+    
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.min.js"></script>
+  </head>
+  
+  <body>
+    
+  <style>
+      
+      body{
+        background-color: #FFB7DC;/*hotpink*/ 
+      }
+    
+    .start{
+      animation: fadein 3s 1;
+    }   
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(-200);
+      } 
+    }
+    
+      .rogo{
+        background-color: hotpink;
+        margin-top: 200px;
+        margin-left: 650px;
+        border: dotted 3px white;
+        -webkit-animation:fuwafuwa 3s infinite linear alternate;
+        animation: fuwafuwa 3s infinite linear alternate;
+      } 
+      
+      @-webkit-keyframes fuwafuwa {
+        0% {
+          -webkit-transform:translate(0, 0)   ;
+        }
+        50% {
+          opacity: 0.4;
+          -webkit-transform:translate(0, -15px) ;
+        }
+        100% {
+          -webkit-transform:translate(0, 0);
+        }
+      }
+    
+      @keyframes  fuwafuwa {
+        0% {
+          transform:translate(0, 0);
+        }
+        50% {
+           opacity: 0.4;
+          transform:translate(0, -15px);
+        }
+        100% {
+          transform:translate(0, 0);
+        }
+    }
+    
+    a:hover{
+      opacity: 0.5;
+    }
+    .angel{
+      margin-top: 10px;
+      margin-left: 0px;
+      margin-bottom: -200px;
+      padding-bottom: 50px;
+      font-size: 45px;/*130*/
+      font-family: "Times New Roman";
+      color: white;
+      animation-name: fadein;
+      animation-duration: 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+   }
+  
+  @keyframes fadein{
+    0% {
+      opacity: 0;/*初期状態では透明に*/
+      transform: translateY(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+    
+    
+      
+</style>
+    
+    <main>
+    
+    <div class="start">
+      <p class="angel">
+       ∵∴∵∴∵∴∵∴∵∴∵∴∵∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴ ∵∴∵∴∵∴∵∴∵∴∵∴∵∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴∵∴
+        <br>
+        ∵∴∵∴∵∴∵∴∵∵∴∵∴∵▶▶ Angel jewelry。
+        ▶▶∵∴∵∴∵∴∵∴∵∴∵∴
+      </p>
+      <a href="index2.html">
+       <img class="rogo" src="images/rogo-rere.JPG" width="450" height="450"><!--250 250-->
+      </a>
+    </div>
+      
+    </main>
+    
+    <script>
+      $(function(){
+        /*$(".rogo").hide();*/
+  
+        $(".rogo").hide().fadeIn(2000);
+  
+        /*setTimeout(function(){
+          $(".rogo").fadeIn(2000);
+        },3000);*/
+        
+        /*$("body").hide.fadeIn(2000);*/
+        /*if (url != '') {*/
+        setTimeout(function(){
+          $(".rogo").fadeIn(2000);
+        },3000);
+          
+        setTimeout(function() {
+          /*$(".start").fadeIn(2000);*/
+            window.location.href = "index2.html";
+          }, 5000);
+        }
+     });
+      
+    </script>
+    
+  </body>
+</html>
